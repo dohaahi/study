@@ -3,9 +3,8 @@ const loginInput = document.getElementById('input');
 const greeting = document.getElementById('greeting');
 
 function onLoginSubmit (e) {
-  e.preventDefault(); //브라우저 기본동작 막아줌
+  e.preventDefault(); 
 
-  //hidden으로 form 없애기 (class 추가)
   loginForm.classList.add('hidden');
 
   //userName을 localStorage에 저장
@@ -17,8 +16,7 @@ function onLoginSubmit (e) {
 
 function paintGreetings(username) {
   greeting.innerText = `Hello ${username}`;
-  greeting.classList.remove('hidden'); //remove로 hidden이였던 greeting 표시 (class 삭제)
-}
+  greeting.classList.remove('hidden'); 
 
 const savedUsername = localStorage.getItem('username');
 
