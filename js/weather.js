@@ -6,6 +6,7 @@ function onGeoOk(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
 
+  //const url = `https://api.openweathermap.org/data/2.5/weather?=seoul&appid=${API_KEY}`
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}`;
 
   fetch(url)

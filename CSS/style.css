@@ -1,5 +1,89 @@
+* {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
 
 .hidden {
   display: none;
 }
+
+.contents,
+#todo-list,
+#quote,
+#weather {
+  position: absolute;
+  z-index: 1;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.contents {
+  width: 100%;
+  top: 30%
+}
+
+#clock {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+input {
+  border: none;
+  border-bottom: 3px solid white;
+  background: transparent;
+  opacity: 0.8;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 40%;
+}
+
+input::placeholder {
+  color:  white;
+  font-size: 20px;
+}
+
+#btn {
+  width: 80px;
+  border: solid white;
+  border-radius: 5px;
+  background: transparent;
+}
+
+button {
+  border: solid white;
+  border-radius: 5px;
+  background: transparent;
+}
+
+#todo-form {
+  margin-top: 8px;
+}
+
+
+ul {
+  display: contents;
+  text-align: center;
+}
+
+li{
+  margin-top: 5px;
+}
+
+li span {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+#quote {
+  width: 100%;
+  bottom: 5%;
+}
+
 
